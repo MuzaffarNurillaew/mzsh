@@ -26,9 +26,14 @@ internal class Program
         {
             return (0, false);
         }
-        if (command == "exit")
+        else if (command == "exit")
         {
             return (0, true);
+        }
+        else if (command == "echo")
+        {
+            Console.WriteLine(string.Join(' ', tokens.Skip(1)));
+            return (0, false);
         }
         else
         {
