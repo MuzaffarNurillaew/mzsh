@@ -32,7 +32,7 @@ internal class Program
         }
         else
         {
-            Console.WriteLine($"{command}: prompt not found");
+            Console.WriteLine($"{command}: command not found");
             return (0, false);
         }
     }
